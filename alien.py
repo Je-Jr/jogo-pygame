@@ -7,7 +7,7 @@ class Alien(Sprite):
         self.screen = screen
         self.ai_settings = ai_settings
 
-        self.image = pygame.transform.scale(pygame.image.load('images/alien.png'), (512//6, 512//6))
+        self.image = pygame.transform.scale(pygame.image.load('images/alien.png'), (384//8, 321//8))
         self.rect = self.image.get_rect()
 
         self.rect.x = self.rect.width

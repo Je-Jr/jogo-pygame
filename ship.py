@@ -5,7 +5,7 @@ class Ship():
         self.screen = screen
         self.ai_settings = ai_settings
 
-        self.image = pygame.transform.scale(pygame.image.load('images/space-ship.png'), (820//5,609//5))
+        self.image = pygame.transform.scale(pygame.image.load('images/space-ship.png'), (820//10,609//10))
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
 
@@ -27,3 +27,6 @@ class Ship():
 
     def blitme(self):
         self.screen.blit(self.image, self.rect)
+
+    def center_ship(self):
+        self.center = self.screen_rect.centerx
